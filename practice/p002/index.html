@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <title>Pratica com imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: skyblue;
+        }
+
+        mark {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>O Saxofone: Um Instrumento Incrível</h1>
+    <img src="sax-alto.jpg" alt="Saxofone" width="300" height="200">
+    <p>O <b>saxofone</b> é um instrumento de sopro fascinante, conhecido por sua versatilidade e a capacidade de
+        produzir
+        um som
+        que ecoa a voz humana. Sua presença marcante em diversos gêneros musicais, do jazz ao pop, o consagra como um
+        dos
+        instrumentos mais expressivos e populares do mundo.</p>
+
+    <h2>Introdução e História</h2>
+    <p>Para entender a importância do <b>saxofone</b>, é essencial conhecer sua origem e a jornada que o levou a se
+        tornar
+        um ícone. Ele não é apenas um instrumento musical; <strong>é uma inovação tecnológica que mudou o rumo da
+            música.</strong></p>
+
+    <h3>A Origem e a Invenção de Adolphe Sax</h3>
+    <p>O <b>saxofone</b> foi inventado por <mark>Adolphe Sax</mark>, um mestre fabricante de instrumentos belga, em
+        1840.
+        Seu objetivo era
+        criar um instrumento que combinasse o poder dos metais com a agilidade das madeiras, resultando em um som
+        poderoso e
+        rico. Patenteado em 1846, ele foi inicialmente projetado para bandas militares.</p>
+
+    <h3>A Evolução e a Popularização</h3>
+    <p>Após sua adoção por bandas militares na França, o <b>saxofone</b> começou a se expandir. Com o tempo, ele
+        encontrou
+        seu lugar em orquestras, mas foi no início do século XX, com o surgimento do jazz, que ele realmente explodiu e
+        se
+        tornou um símbolo de inovação e liberdade musical.</p>
+
+    <h2>O <b>saxofone</b> na Música</h2>
+    <p>A adaptabilidade do <b>saxofone</b> é uma de suas maiores virtudes. Ele consegue se encaixar em uma variedade de
+        estilos,
+        seja como solista principal ou como parte fundamental da seção de sopros de uma banda, elevando o nível de
+        qualquer
+        melodia.</p>
+
+    <h3>O Reinado no Jazz e no Blues</h3>
+    <p>No jazz, o <b>saxofone</b> se tornou a voz da improvisação, com lendas como <mark>Coltrane e Charlie
+            Parker</mark>
+        redefinindo a
+        música. Sua capacidade de expressar emoções e a sonoridade única são elementos essenciais para a identidade
+        desses
+        gêneros.</p>
+
+    <h3>O Papel em Outros Gêneros</h3>
+    <p>Além do jazz, o <b>saxofone</b> tem um papel significativo em outras formas de música, provando sua
+        adaptabilidade. Sua
+        presença adiciona um toque especial e uma textura sonora distinta a diversas composições, tornando-se um
+        elemento
+        surpresa em muitas faixas.</p>
+
+    <h4>Na Música Clássica</h4>
+    <p><em>Embora menos comum, o saxofone tem seu lugar na música clássica</em>. Compositores como <mark>Claude
+            Debussy</mark>
+        escreveram obras que exploram o timbre do instrumento, provando que ele é capaz de criar melodias suaves e
+        complexas, distantes de seu uso mais enérgico no jazz.</p>
+
+    <h4>Na Música Popular</h4>
+    <p>No pop, rock e R&B, o <b>saxofone</b> frequentemente aparece em solos cativantes e linhas de melodia que ficam
+        na memória
+        do ouvinte. Sua energia é perfeita para dar um brilho extra a canções de sucesso, como nas faixas de
+        <i><mark>Michael
+                ou de bandas como Guns N' Roses</mark></i>.</p>
+    <h1>Este é um exemplo de um endereço</h1>
+    <p>
+    <address>Rua junqueira nº 39 bairro Florianópolis Santa Catarina.</address>
+    </p>
+
+    <h1>Texto grande e texto pequeno</h1>
+    <p>Este é um texto <big><del>grande tag obsoleta</del></big> e este é um texto <small>pequeno ainda em uso como no
+            caso de cláusulas contratuais etc...</small></p>
+    <p><ins>Adicionei este parágrafo apenas para exemplificar o uso da tag &lt;ins&gt;.</ins></p>
+    <p><u>E esta para exemplificar a tag &lt;u&gt;.</u></p>
+    <p>Já este para exemplificar a tag &lt;sup&gt; e &lt;sub&gt; O(4n<sup>2</sup> + 2n + 7), H<sub>2</sub>O.</p>
+
+    <h1>Código em linguagem C: Struct.</h1>
+    <h2>Struct dentro de struct</h2>
+    <pre>
+<code>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct {
+    int dia, mes, ano;
+} DataNasc;
+
+typedef struct {
+    DataNasc dataNasc;
+    int idade;
+    char sexo;
+    char nome[100];
+} Pessoa;
+
+int main() {
+    Pessoa pessoa;
+
+    printf("Digite seu nome: ");
+    fgets(pessoa.nome, 100, stdin);
+    printf("Digite sua idade: ");
+    scanf("%d", &pessoa.idade);
+    printf("Digite f ou m para o sexo:");
+    scanf(" %c", &pessoa.sexo);
+    printf("Digite sua data de nascimento no formato dd mm aaaa: ");
+    scanf("%d%d%d", &pessoa.dataNasc.dia, &pessoa.dataNasc.mes, &pessoa.dataNasc.ano);
+
+    printf("\nNome: %sIdade: %d\nSexo: %c\n", pessoa.nome, pessoa.idade, pessoa.sexo);
+    printf("Data de nascimento: %d/%d/%d\n", pessoa.dataNasc.dia, pessoa.dataNasc.mes, pessoa.dataNasc.ano);
+
+    return 0;
+}
+</code>
+</pre>
+    <p>Uma citação famosa atribuída a Dennis Ritchie, criador da linguagem C, é: <q>C faz com que seja muito fácil
+            atirar
+            nos próprios pés</q>. Esta frase é geralmente associada ao C e à linguagem C++, criada por Bjarne
+        Stroustrup,
+        que ele comenta:
+    <blockquote>C++ faz com que isso se torne mais difícil, mas quando você consegue, destrói toda a perna.</blockquote>
+    </p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
+            title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr> e também linguagem C.</p>
+    <p><bdo dir="rtl">Estou estudando HTML, CSS, JS e também linguagem C.</bdo></p>
+
+    <h2>Lista de tarefas</h2>
+    <ol>
+        <li>Acorda as 5:30 da manha</li>
+        <li>Tomar café da manha</li>
+        <li>Caminhar</li>
+        <li>Tomar banho</li>
+        <li>Estudar programação</li>
+        <li>Almoçar</li>
+        <li>Trabalhar</li>
+        <li>Ir para faculdade</li>
+        <li>Jantar</li>
+        <li>Revisar contúdo da faculdade</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Coisas que eu gosto de fazer nas horas vagas</h2>
+    <ul type="square">
+        <li>Jogar video game</li>
+        <li>Assistir filmes</li>
+        <li>Ler livros</li>
+        <li>Ouvir musica</li>
+        <li>Assistir series</li>
+    </ul>
+
+    <h2>Meus intrumentos musicais preferido</h2>
+    <ol>
+        <li>Sopro</li>
+        <ol type="a">
+            <li>Saxofone</li>
+            <li>Trompete</li>
+            <li>Trombone</li>
+            <li>Flauta</li>
+            <li>Clarinete</li>
+        </ol>
+        <li>Corda</li>
+        <ol type="a">
+            <li>Violão</li>
+            <li>Guitarra</li>
+            <li>Baixo</li>
+            <li>Violino</li>
+            <li>Violoncelo</li>
+        </ol>
+    </ol>
+    <h2>Um pouco sobre games</h2>
+    <h3>Games que já joguei</h3>
+    <ol>
+        <li>Rocksatar</li>
+        <ul type="disc">
+            <li>Red Dead redemption</li>
+            <ul type="circle">
+                <li>Red Dead Redemption 1</li>
+                <li>Red Dead Redemption2</li>
+            </ul>
+        
+            <li>GTA</li>
+            <ul type="circle"">
+                <li>GTAIII</li>
+                <li>GTAV</li>
+                <li>GTAIV</li>
+                <li>GTA San Andreas</li>
+                <li>GTA Vice City</li>
+                <li>GTA Liberty City Stories</li>
+                <li>GTA Vice City Stories</li>
+            </ul>
+        </ul>
+
+        <li>EA Games</li>
+        <ul type="disc">
+            <li>Need for Speed</li>
+            <li>Battlefield</li>
+            <li>FIFA</li>
+            <li>Madden</li>
+            <li>EA Sports</li>
+        </ul>
+        <li>Ubsoft</li>
+        <ul type="disc">
+            <li>Assassin's Creed</li>
+            <li>Far Cry</li>
+            <li>Tom Clancy</li>
+        </ul>
+    </ol>
+    <h2>Famílias de Instrumentos Musicais</h2>
+    <h3>Instrumentos de Sopro</h3>
+    <p>Os instrumentos de sopro produzem som pela vibração de uma coluna de ar. São divididos principalmente em dois grupos: <strong>madeiras</strong> e <strong>metais</strong>.</p>
+    <dl>
+        <dt>Metais</dt>
+        <dd>Os instrumentos de sopro de madeira geram som a partir da vibração de uma palheta (como no clarinete e no saxofone) ou do sopro direto em um orifício (como na flauta).</dd>
+        <p>EX</p>
+        <ul>
+        <li>Flauta</li>
+        <li>Clarinete</li>
+        <li>Oboé</li>
+        <li>Fagote</li>
+        </ul>
+        <dt>madeiras</dt>
+        <dd>Os instrumentos de sopro de metal produzem som através da vibração dos lábios do músico em um bocal. As notas são alteradas por meio de pistos ou válvulas.</dd>
+        <p>EX</p>
+        <ul>
+        <li>Trompete</li>
+        <li>Trombone</li>
+        <li>Tuba</li>
+        <li>Trompa</li>
+        </ul>
+       
+    </dl>
+</body>
+
+</html>
